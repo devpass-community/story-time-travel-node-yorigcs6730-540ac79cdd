@@ -1,8 +1,5 @@
 const getCurrentDate = () => {
-    const day = new Date().getDay().toString().padStart(2, '0')
-    const month = new Date().getMonth().toString().padStart(2, '0')
-    const year = new Date().getFullYear()
-    return `${day}/${month}/${year}`
+    return new Date().toISOString().split('T')[0]
 };
 
 module.exports = {
