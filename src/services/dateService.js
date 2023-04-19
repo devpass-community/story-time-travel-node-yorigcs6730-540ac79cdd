@@ -1,5 +1,5 @@
 const getCurrentDate = () => {
-    // Add your solution here!
+    return new Date().toISOString().split('T')[0]
 };
 
 module.exports = {
